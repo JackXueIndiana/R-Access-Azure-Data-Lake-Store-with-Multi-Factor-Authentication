@@ -1,0 +1,6 @@
+library(reticulate)
+os <- import("os")
+os$listdir(".")
+source_python("C:\\Users\\xinxue\\data\\py3accessadls4r.py", convert = FALSE)
+status = uploadfiletoadls("jacktestsbdls", "/mysampledirectory", "C:\\Users\\xinxue\\data\\test.txt", "/mysampledirectory/mysamplefile.txt")
+print(status)
